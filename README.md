@@ -59,6 +59,19 @@ L'outil n'utilise pas de système de notation aléatoire, mais des règles méti
 
 *Les captures d'écran démontrant le fonctionnement de l'outil sont disponibles dans le dossier `screenshots/` de ce projet.*
 
+### 1. Interface de l'Outil (En cours d'Audit)
+![Interface Evidence Collector](screenshots/04_Evidence_Interface.png)
+
+### 2. Tableau de Bord et Score de Risque (Rapport HTML)
+![Dashboard HTML](screenshots/05_Dashboard_Score.png)
+
+### 3. Mapping des Exigences (OWASP MASVS / MASTG)
+![Mapping OWASP](screenshots/12_Mapping_MASVS.png)
+
+### 4. Résumé IA et Contrôle de Cohérence
+![Controle IA](screenshots/13_Controle_Coherence_IA.png)
+
+
 * `04_Evidence_Interface.png` : L'interface principale de l'outil pendant l'audit.
 * `05_Dashboard_Score.png` : Le tableau de bord du rapport HTML final avec le score.
 * `12_Mapping_MASVS.png` : Le tableau de correspondance avec les exigences de l'OWASP.
