@@ -1,5 +1,7 @@
 # ProjetMobile-Evidence-Collector-Compliance-Pack-preuves-d-audit
 
+# Evidence Collector Pro (OWASP Mobile Audit)
+
 **Evidence Collector Pro** est un outil automatisé écrit en Python, conçu pour assister les professionnels de la cybersécurité dans l'audit des applications Android (APK). Il réalise la phase de "Reconnaissance Défensive" en extrayant automatiquement les preuves nécessaires pour générer un rapport de conformité **OWASP MASVS / MASTG**.
 
 ---
@@ -55,24 +57,39 @@ L'outil n'utilise pas de système de notation aléatoire, mais des règles méti
 
 ---
 
-## Aperçu du Projet (Captures d'écran)
+## Galerie des Captures d'écran (À trier)
 
-*Les captures d'écran démontrant le fonctionnement de l'outil sont disponibles dans le dossier `screenshots/` de ce projet.*
+*(Note : Étant une IA textuelle, je ne peux pas "voir" le contenu des images pour les associer parfaitement. Voici toutes les captures disponibles. Supprimez celles qui ne correspondent pas).*
 
-### 1. Interface de l'Outil (En cours d'Audit)
-![Interface Evidence Collector](screenshots/04_Evidence_Interface.png)
+### Capture 03
+![03](screenshots/03_Dossiers_Audits.png)
 
-### 2. Tableau de Bord et Score de Risque (Rapport HTML)
-![Dashboard HTML](screenshots/05_Dashboard_Score.png)
+### Capture 04
+![04](screenshots/04_Evidence_Interface.png)
 
-### 3. Mapping des Exigences (OWASP MASVS / MASTG)
-![Mapping OWASP](screenshots/12_Mapping_MASVS.png)
+### Capture 05
+![05](screenshots/05_Dashboard_Score.png)
 
-### 4. Résumé IA et Contrôle de Cohérence
-![Controle IA](screenshots/13_Controle_Coherence_IA.png)
+### Capture 06
+![06](screenshots/06_Identite_APK.png)
 
+### Capture 07
+![07](screenshots/07_Recommandations.png)
 
-* `04_Evidence_Interface.png` : L'interface principale de l'outil pendant l'audit.
-* `05_Dashboard_Score.png` : Le tableau de bord du rapport HTML final avec le score.
-* `12_Mapping_MASVS.png` : Le tableau de correspondance avec les exigences de l'OWASP.
-* `13_Controle_Coherence_IA.png` : L'évaluation automatisée de la qualité des preuves collectées.
+### Capture 08
+![08](screenshots/08_Permissions.png)
+
+### Capture 09
+![09](screenshots/09_Composants_Exportes.png)
+
+### Capture 10
+![10](screenshots/10_Secrets_Anonymises.png)
+
+### Capture 11
+![11](screenshots/11_SBOM_Dependances.png)
+
+### Capture 12
+![12](screenshots/12_Mapping_MASVS.png)
+
+### Capture 13
+![13](screenshots/13_Controle_Coherence_IA.png)
