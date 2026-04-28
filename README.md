@@ -57,39 +57,22 @@ L'outil n'utilise pas de système de notation aléatoire, mais des règles méti
 
 ---
 
-## Galerie des Captures d'écran (À trier)
+## Aperçu du Projet en Images
 
-*(Note : Étant une IA textuelle, je ne peux pas "voir" le contenu des images pour les associer parfaitement. Voici toutes les captures disponibles. Supprimez celles qui ne correspondent pas).*
+Afin de démontrer l'efficacité de l'outil et le respect absolu du cahier des charges, voici une présentation visuelle des différentes étapes de l'audit.
 
-### Capture 03
-![03](screenshots/03_Dossiers_Audits.png)
+### 1. Interface de l'Outil et Collecte (Analyse Statique & Dynamique)
+L'interface a été conçue pour être "Dead Simple". L'auditeur sélectionne son fichier APK et la console intégrée affiche en temps réel le déroulé des opérations (Hash, Manifest, SBOM, Connexion ADB).
+![Interface Evidence Collector](screenshots/04_Evidence_Interface.png)
 
-### Capture 04
-![04](screenshots/04_Evidence_Interface.png)
+### 2. Le Tableau de Bord et le Score de Risque
+Le rapport final généré n'est pas un simple document texte, mais un tableau de bord HTML interactif et professionnel. Le score de risque est calculé dynamiquement grâce au moteur de règles (ex: présence de librairies, excès de permissions).
+![Dashboard HTML](screenshots/05_Dashboard_Score.png)
 
-### Capture 05
-![05](screenshots/05_Dashboard_Score.png)
+### 3. La Conformité et le Mapping OWASP
+C'est le cœur de l'audit. Le rapport relie automatiquement chaque preuve extraite du code (ex: composants exposés, permissions critiques) à son exigence MASVS et au test MASTG correspondant pour faciliter le travail de l'auditeur.
+![Mapping OWASP](screenshots/12_Mapping_MASVS.png)
 
-### Capture 06
-![06](screenshots/06_Identite_APK.png)
-
-### Capture 07
-![07](screenshots/07_Recommandations.png)
-
-### Capture 08
-![08](screenshots/08_Permissions.png)
-
-### Capture 09
-![09](screenshots/09_Composants_Exportes.png)
-
-### Capture 10
-![10](screenshots/10_Secrets_Anonymises.png)
-
-### Capture 11
-![11](screenshots/11_SBOM_Dependances.png)
-
-### Capture 12
-![12](screenshots/12_Mapping_MASVS.png)
-
-### Capture 13
-![13](screenshots/13_Controle_Coherence_IA.png)
+### 4. Contrôle de Cohérence et Résumé IA
+Pour garantir la qualité du rapport, un contrôle de cohérence est généré. Il vérifie que toutes les preuves requises (dont le screenshot UI et les logs) ont bien été collectées via ADB. Si le test a été fait hors-ligne, l'outil signale de lui-même les preuves manquantes (`[MISSING]`).
+![Controle IA](screenshots/13_Controle_Coherence_IA.png)
