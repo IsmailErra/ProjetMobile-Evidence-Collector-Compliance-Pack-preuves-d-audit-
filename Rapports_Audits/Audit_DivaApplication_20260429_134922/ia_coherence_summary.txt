@@ -1,0 +1,21 @@
+=== SYNTHESE IA - EVIDENCE COLLECTOR PRO ===
+Application: DivaApplication.apk
+Date: 29/04/2026 13:49:22
+Score de risque: 75/100
+
+PREUVES COLLECTEES:
+- Hash SHA256: OK
+- Manifest XML: OK
+- Permissions: OK (3 permissions)
+- SBOM: OK (1 librairies)
+- Secrets: MISSING (0 secrets trouves)
+- Screenshots: MISSING
+- Logs anonymises: MISSING
+
+CONTROLE DE COHERENCE:
+L'audit est partiel. Les preuves dynamiques sont absentes car aucun appareil ADB n'a ete detecte.
+
+RECOMMANDATIONS PRIORITAIRES:
+1. Retirer ou justifier les 3 permissions dangereuses.
+2. Proteger les 4 composants exportes sans restriction via une permission.
+3. Definir android:allowBackup='false' pour eviter l'extraction de donnees.

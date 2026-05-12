@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rapport d'Audit - DivaApplication.apk</title>
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; background-color: #FFFFFF; color: #333333; margin: 0; padding: 0; line-height: 1.5; }
+        .header { background-color: #FF6B00; color: #FFFFFF; padding: 30px 40px; text-align: center; }
+        .header h1 { margin: 0; font-size: 28px; font-weight: normal; text-transform: uppercase; letter-spacing: 1px; }
+        .header p { margin: 10px 0 0 0; font-size: 14px; opacity: 0.9; }
+        
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        .dashboard { display: flex; justify-content: space-between; border: 1px solid #EEEEEE; margin-bottom: 30px; }
+        .dash-box { padding: 20px; text-align: center; flex: 1; border-right: 1px solid #EEEEEE; }
+        .dash-box:last-child { border-right: none; }
+        .dash-value { font-size: 24px; font-weight: bold; color: #FF6B00; display: block; margin-bottom: 5px; }
+        .dash-label { font-size: 12px; color: #666666; text-transform: uppercase; }
+        
+        h2 { color: #FF6B00; font-size: 16px; text-transform: uppercase; border-bottom: 1px solid #EEEEEE; padding-bottom: 10px; margin-top: 40px; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 13px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #EEEEEE; }
+        th { color: #FF6B00; font-weight: bold; border-bottom: 2px solid #FF6B00; background-color: #FFFFFF; text-transform: uppercase; font-size: 11px; }
+        tr:nth-child(even) { background-color: #F8F9FA; }
+        
+        ul.recommendations { list-style-type: none; padding: 0; }
+        ul.recommendations li { padding: 10px 15px; border-left: 3px solid #FF6B00; background-color: #F8F9FA; margin-bottom: 10px; font-size: 14px; }
+        
+        .footer { text-align: center; padding: 30px; font-size: 12px; color: #999999; border-top: 1px solid #EEEEEE; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Rapport d'Audit de Securite</h1>
+        <p>DivaApplication.apk | 29/04/2026</p>
+    </div>
+
+    <div class="container">
+        
+        <div class="dashboard">
+            <div class="dash-box">
+                <span class="dash-value">75/100</span>
+                <span class="dash-label">Score de Risque</span>
+            </div>
+            <div class="dash-box">
+                <span class="dash-value">3</span>
+                <span class="dash-label">Permissions</span>
+            </div>
+            <div class="dash-box">
+                <span class="dash-value">4</span>
+                <span class="dash-label">Composants Exposes</span>
+            </div>
+            <div class="dash-box">
+                <span class="dash-value">0</span>
+                <span class="dash-label">Secrets Detectes</span>
+            </div>
+        </div>
+
+        <h2>Identite de l'Application</h2>
+        <table>
+            <tr><th style="width: 30%;">Propriete</th><th>Valeur</th></tr>
+            <tr><td>Nom du fichier</td><td>DivaApplication.apk</td></tr>
+            <tr><td>Package</td><td>jakhar.aseem.diva</td></tr>
+            <tr><td>Version Code</td><td>1</td></tr>
+            <tr><td>Version Name</td><td>1.0</td></tr>
+            <tr><td>Hash SHA256</td><td><span style="font-family: monospace; font-size: 12px;">5cefc51fce9bd760b92ab2340477f4dda84b4ae0c5d04a8c9493e4fe34fab7c5</span></td></tr>
+            <tr><td>Taille</td><td>1.43 MB</td></tr>
+            <tr><td>Sauvegarde autorisee (allowBackup)</td><td>Oui</td></tr>
+        </table>
+
+        <h2>DETAIL DU CALCUL DU SCORE</h2>
+        <table>
+            <tr><th style="width: 70%;">Critere</th><th>Points Appliques</th></tr>
+            <tr><td>Composants exportes sans permission</td><td>+40 points</td></tr>
+            <tr><td>allowBackup=true</td><td>+10 points</td></tr>
+            <tr><td>debuggable=true</td><td>+10 points</td></tr>
+            <tr><td>Permissions dangereuses</td><td>+15 points</td></tr>
+            <tr><td>Secrets detectes</td><td>+0 points</td></tr>
+            <tr style="background-color: #f1f1f1; font-weight: bold;"><td style="text-align: right;">TOTAL DU RISQUE</td><td>75/100</td></tr>
+        </table>
+
+        <h2>NIVEAU DE RISQUE</h2>
+        <table>
+            <tr><th>Plage de score</th><th>Niveau de Risque</th></tr>
+            <tr><td>0-20</td><td>Faible</td></tr>
+            <tr><td>21-50</td><td>Moyen</td></tr>
+            <tr><td>51-80</td><td>Eleve</td></tr>
+            <tr><td>81-100</td><td>Critique</td></tr>
+        </table>
+
+        <h2>Recommandations de Securite</h2>
+        <ul class="recommendations">
+            <li>Retirer ou justifier les 3 permissions dangereuses.</li><li>Proteger les 4 composants exportes sans restriction via une permission.</li><li>Definir android:allowBackup='false' pour eviter l'extraction de donnees.</li><li>Definir android:debuggable='false' en production.</li>
+        </ul>
+
+        <h2>Permissions Declarees</h2>
+        <table>
+            <thead><tr><th>Permission</th><th>Niveau de protection</th><th>Justification</th></tr></thead>
+            <tbody>
+                <tr><td><span style='font-family: monospace;'>android.permission.READ_EXTERNAL_STORAGE</span></td><td>Dangerous</td><td>A valider manuellement</td></tr><tr><td><span style='font-family: monospace;'>android.permission.WRITE_EXTERNAL_STORAGE</span></td><td>Dangerous</td><td>A valider manuellement</td></tr><tr><td><span style='font-family: monospace;'>android.permission.INTERNET</span></td><td>Dangerous</td><td>A valider manuellement</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Composants Exportes (Surface d'Attaque)</h2>
+        <table>
+            <thead><tr><th>Composant</th><th>Type</th><th>Exporte</th><th>Permission requise</th></tr></thead>
+            <tbody>
+                <tr><td><span style='font-family: monospace;'>jakhar.aseem.diva.MainActivity</span></td><td>Activity</td><td>Oui</td><td>Aucune</td></tr><tr><td><span style='font-family: monospace;'>jakhar.aseem.diva.APICredsActivity</span></td><td>Activity</td><td>Oui</td><td>Aucune</td></tr><tr><td><span style='font-family: monospace;'>jakhar.aseem.diva.APICreds2Activity</span></td><td>Activity</td><td>Oui</td><td>Aucune</td></tr><tr><td><span style='font-family: monospace;'>jakhar.aseem.diva.NotesProvider</span></td><td>Provider</td><td>Oui</td><td>Aucune</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Secrets et Donnees Sensibles</h2>
+        <table>
+            <thead><tr><th>Type</th><th>Localisation</th><th>Valeur Anonymisee</th></tr></thead>
+            <tbody>
+                <tr><td colspan='3'>Aucun secret detecte</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Dependances (SBOM)</h2>
+        <table>
+            <thead><tr><th>Bibliotheque Native</th><th>Version</th><th>Vulnerabilites Connues</th></tr></thead>
+            <tbody>
+                <tr><td><span style='font-family: monospace;'>libdivajni.so</span></td><td>Inconnue</td><td>Verifier NVD/CVE manuellement</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Conformite MASVS & MASTG</h2>
+        <table>
+            <thead><tr><th>Preuve Collectee</th><th>Exigence MASVS</th><th>Test MASTG</th><th>Description</th></tr></thead>
+            <tbody>
+                <tr><td>Manifest.xml (Surface d'attaque)</td><td><strong>MASVS-PLATFORM-1</strong></td><td><strong>MASTG-TEST-0012</strong></td><td>Verification des composants exportes et configurations IPC.</td></tr><tr><td>Permissions extract</td><td><strong>MASVS-STORAGE-1</strong></td><td><strong>MASTG-TEST-0052</strong></td><td>Validation du principe de moindre privilege.</td></tr><tr><td>Analyse SBOM (.so)</td><td><strong>MASVS-CODE-4</strong></td><td><strong>MASTG-TEST-0044</strong></td><td>Verification des bibliotheques tierces non securisees.</td></tr><tr><td>Recherche de secrets</td><td><strong>MASVS-CRYPTO-1</strong></td><td><strong>MASTG-TEST-0015</strong></td><td>Detection de cles d'API ou mots de passe hardcodes.</td></tr>
+            </tbody>
+        </table>
+        
+    </div>
+    
+    <div class="footer">
+        Genere par Evidence Collector Pro - Outil d'audit automatise
+    </div>
+</body>
+</html>
