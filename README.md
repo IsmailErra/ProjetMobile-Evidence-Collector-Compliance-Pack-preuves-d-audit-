@@ -62,7 +62,7 @@ Afin de démontrer l'efficacité de l'outil et le respect absolu du cahier des c
 ### Démonstration Vidéo
 Voici une démonstration de l'outil en action :
 
-<video src="https://github.com/IsmailErra/ProjetMobile-Evidence-Collector-Compliance-Pack-preuves-d-audit-/raw/main/Demo.mp4" controls="controls" style="max-width: 100%;">
+<video src="Demo.mp4" controls="controls" style="max-width: 100%;">
   Votre navigateur ne supporte pas la balise vidéo.
 </video>
 
