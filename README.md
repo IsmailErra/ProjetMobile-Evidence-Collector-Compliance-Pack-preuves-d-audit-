@@ -1,4 +1,3 @@
-
 # Evidence Collector Pro (OWASP Mobile Audit)
 
 **Evidence Collector Pro** est un outil automatisé écrit en Python, conçu pour assister les professionnels de la cybersécurité dans l'audit des applications Android (APK). Il réalise la phase de "Reconnaissance Défensive" en extrayant automatiquement les preuves nécessaires pour générer un rapport de conformité **OWASP MASVS / MASTG**.
@@ -59,6 +58,13 @@ L'outil n'utilise pas de système de notation aléatoire, mais des règles méti
 ## Aperçu du Projet en Images
 
 Afin de démontrer l'efficacité de l'outil et le respect absolu du cahier des charges, voici une présentation visuelle des différentes étapes de l'audit.
+
+### Démonstration Vidéo
+Voici une démonstration de l'outil en action :
+
+<video src="screenshots/Demo.mp4" controls="controls" style="max-width: 100%;">
+  Votre navigateur ne supporte pas la balise vidéo.
+</video>
 
 ### 1. Interface de l'Outil et Collecte (Analyse Statique & Dynamique)
 L'interface a été conçue pour être "Dead Simple". L'auditeur sélectionne son fichier APK et la console intégrée affiche en temps réel le déroulé des opérations (Hash, Manifest, SBOM, Connexion ADB).
