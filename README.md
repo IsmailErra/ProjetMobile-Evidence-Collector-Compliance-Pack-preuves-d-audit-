@@ -62,9 +62,7 @@ Afin de démontrer l'efficacité de l'outil et le respect absolu du cahier des c
 ### Démonstration Vidéo
 Voici une démonstration de l'outil en action :
 
-<video src="Demo.mp4" controls="controls" style="max-width: 100%;">
-  Votre navigateur ne supporte pas la balise vidéo.
-</video>
+https://github.com/IsmailErra/ProjetMobile-Evidence-Collector-Compliance-Pack-preuves-d-audit-/raw/main/Demo.mp4
 
 ### 1. Interface de l'Outil et Collecte (Analyse Statique & Dynamique)
 L'interface a été conçue pour être "Dead Simple". L'auditeur sélectionne son fichier APK et la console intégrée affiche en temps réel le déroulé des opérations (Hash, Manifest, SBOM, Connexion ADB).
