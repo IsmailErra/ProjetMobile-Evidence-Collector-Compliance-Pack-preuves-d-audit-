@@ -38,6 +38,7 @@ L'utilisation a été pensée pour être la plus simple possible (Interface "Dea
 
 1. Lancez l'outil via la commande : `python apk_evidence_collector.py`
 2. Cliquez sur **Parcourir** et sélectionnez le fichier `.apk` cible (ex: `DivaApplication.apk`).
+3. Cliquez sur **Lancer l'Audit**. La progression s'affiche dans la console en temps réel.
 4. À la fin, tous les fichiers sont triés et générés dans le sous-dossier `Rapports_Audits/`.
 5. Cliquez sur **Ouvrir le Rapport** pour visualiser le Dashboard HTML.
 
